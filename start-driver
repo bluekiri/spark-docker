@@ -10,6 +10,5 @@ fi
 
 # Spark submit
 spark-submit --class ${MAIN_CLASS} \
-             --master ${MASTER} \
-             ${SPARK_ARGS} \
+             --master ${MASTER} ${SPARK_ARGS} \
              ${JAR} $@
